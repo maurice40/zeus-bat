@@ -1,0 +1,6 @@
+
+spring:
+  datasource:
+    url:
+server:
+  port: ${SERVER_PORT}
