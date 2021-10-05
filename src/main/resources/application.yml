@@ -1,6 +1,12 @@
 
 spring:
   datasource:
-    url:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
 server:
   port: ${SERVER_PORT}
